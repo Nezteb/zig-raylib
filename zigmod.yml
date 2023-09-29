@@ -5,5 +5,11 @@ description: idk
 root_dependencies:
   # - src: git https://github.com/ryupold/raylib.zig
   - src: git https://github.com/Not-Nik/raylib-zig
-    name: raylib-zig
-    main: lib/raylib-zig.zig
+    name: raylib
+    main: lib/raylib-zig.zig 
+    # main: build.zig
+# dev_dependencies:
+#   - src: git https://github.com/Not-Nik/raylib-zig
+#     name: raylib
+#     # main: build.zig
+#     main: lib/raylib-zig.zig

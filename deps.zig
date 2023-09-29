@@ -87,16 +87,16 @@ fn checkMinZig(current: std.SemanticVersion, exe: *std.build.LibExeObjStep) void
 pub const dirs = struct {
     pub const _root = "";
     pub const _ejd5uwabp9jc = cache ++ "/../..";
-    pub const _t5hujtko0kni = cache ++ "/git/github.com/Not-Nik/raylib-zig";
+    pub const _cso8tnu5vs92 = cache ++ "/git/github.com/Not-Nik/raylib-zig";
 };
 
 pub const package_data = struct {
     pub var _ejd5uwabp9jc = Package{
         .directory = dirs._ejd5uwabp9jc,
     };
-    pub var _t5hujtko0kni = Package{
-        .directory = dirs._t5hujtko0kni,
-        .pkg = Pkg{ .name = "raylib-zig", .source = .{ .path = dirs._t5hujtko0kni ++ "/lib/raylib-zig.zig" }, .dependencies = &.{} },
+    pub var _cso8tnu5vs92 = Package{
+        .directory = dirs._cso8tnu5vs92,
+        .pkg = Pkg{ .name = "raylib", .source = .{ .path = dirs._cso8tnu5vs92 ++ "/lib/raylib-zig.zig" }, .dependencies = &.{} },
     };
     pub var _root = Package{
         .directory = dirs._root,
@@ -104,11 +104,11 @@ pub const package_data = struct {
 };
 
 pub const packages = &[_]*Package{
-    &package_data._t5hujtko0kni,
+    &package_data._cso8tnu5vs92,
 };
 
 pub const pkgs = struct {
-    pub const raylib_zig = &package_data._t5hujtko0kni;
+    pub const raylib = &package_data._cso8tnu5vs92;
 };
 
 pub const imports = struct {

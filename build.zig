@@ -1,5 +1,6 @@
 const std = @import("std");
 const deps = @import("./deps.zig");
+// const raylib = deps.imports.raylib;
 
 // Although this function looks imperative, note that its job is to
 // declaratively construct a build graph that will be executed by an external
@@ -24,6 +25,13 @@ pub fn build(b: *std.Build) void {
         .target = target,
         .optimize = optimize,
     });
+
+    // TODO: Do I need to do this at build time?
+    // std.debug.print("imports = {}\n", .{deps.imports.raylib});
+    // raylib.build(b) catch |err| {
+    //     std.debug.print("An error occurred: {}\n", .{err});
+    // };
+    // exe.addModule("raylib", raylib.getModule(b, ""));
 
     deps.addAllTo(exe);
 
