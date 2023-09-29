@@ -1,0 +1,9 @@
+id: ejd5uwabp9jc0qun1c8hy39x8ko1o8w1cb1wv7i0hc25mgx4
+name: zig-raylib
+license: MIT
+description: idk
+root_dependencies:
+  # - src: git https://github.com/ryupold/raylib.zig
+  - src: git https://github.com/Not-Nik/raylib-zig
+    name: raylib-zig
+    main: lib/raylib-zig.zig
