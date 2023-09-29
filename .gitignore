@@ -16,6 +16,15 @@ zig-out/
 /build/
 /build-*/
 /docgen_tmp/
+
+### https://github.com/nektro/zigmod/blob/master/.gitignore
 zig-*
 .zigmod
 bin
+
+### https://github.com/Not-Nik/raylib-zig/blob/devel/.gitignore
+
+libraylib.a
+raylib.h
+raymath.h
+.DS_Store
